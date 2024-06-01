@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quản lý thông tin cá nhân</title>
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/QuanLyTTCN_MK.css" />
+    </head>
+    <body>
+        <header class="header">
+        </header>
+        <div class="content">
+            <div class="containerQL">
+                <p>Quản lý tài khoản</p>
+                <ul class="listQL">
+                    <li class="QL"><a href="#!">Thông tin cá nhân</a></li>
+                    <li class="QL"><a href="QuanLyMK.html">Mật khẩu</a></li>
+                </ul>
+            </div>
+            <div class="containerTT">
+                <h1>Thông tin cá nhân</h1>
+                <form action="" method="POST" class="form" id="form-1">
+                    <div class="form-group">
+                        <label for="name" class="form-label"
+                            >Họ và tên</label
+                        ><br />
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            placeholder="Nhập họ và tên"
+                            class="form-control"
+                        /><br />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label
+                        ><br />
+                        <input
+                            id="email"
+                            name="email"
+                            type="text"
+                            placeholder="Nhập email"
+                            class="form-control"
+                        /><br />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="SDT" class="form-label">Số điện thoại</label><br />
+                        <input
+                            id="SDT"
+                            name="SDT"
+                            placeholder="Nhập số điện thoại"
+                            type="text"
+                            class="form-control"
+                        /><br />
+                        <span class="form-message"></span>
+                    </div>
+
+                    <input class="btn_CapNhat" type="button" value="Cập nhật" />
+                </form>
+            </div>
+        </div>
+        <footer>
+            <img class="footer_logo" src="./assets/img/logo.png" alt="Lotte" />
+            <div class="footer_contact">
+                <ul>
+                    <li>
+                        <address>
+                            <span>Địa chỉ: </span>54 P. Liễu Giai, Cống Vị, Ba
+                            Đình, Hà Nội 100000, Việt Nam
+                        </address>
+                    </li>
+                    <li>
+                        <span>Số điện thoại: </span
+                        ><a href="tel:0862269885">0862269885</a>
+                    </li>
+                    <li>
+                        <span>Email: </span
+                        ><a href="mailto:lotte.haui@gmail.com"
+                            >lotte.haui@gmail.com</a
+                        >
+                    </li>
+                </ul>
+                <div class="footer_mxh">
+                    <a href="!#">
+                        <img
+                            class="footer_icon"
+                            src="./assets/icon/facebook.svg"
+                            alt="facebook"
+                            width="28px"
+                            height="28px"
+                        />
+                    </a>
+                    <a href="!#">
+                        <img
+                            class="footer_icon"
+                            src="./assets/icon/instagram.svg"
+                            alt="instagram"
+                            width="28px"
+                            height="28px"
+                        />
+                    </a>
+                    <a href="!#">
+                        <img
+                            class="footer_icon"
+                            src="./assets/icon/tiktok.svg"
+                            alt="tiktok"
+                            width="28px"
+                            height="28px"
+                        />
+                    </a>
+                    <a href="!#">
+                        <img
+                            class="footer_icon"
+                            src="./assets/icon/twitter.svg"
+                            alt="twitter"
+                            width="28px"
+                            height="28px"
+                        />
+                    </a>
+                    <a href="!#">
+                        <img
+                            class="footer_icon"
+                            src="./assets/icon/youtube.svg"
+                            alt="youtube"
+                            width="28px"
+                            height="28px"
+                        />
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/js/render.js"></script>
+        <script src="./assets/js/header.js"></script>
+        <script src="./assets/js/quanLyTTCN.js"></script>
+        <script src="./assets/js/validateTT.js"></script>
+        <script>
+            Validator({
+                form: "#form-1",
+                formGroupSelector: ".form-group",
+                errorSelector: ".form-message",
+                rules: [
+                    Validator.isEmail(
+                        "#email",
+                        "Email không hợp lệ"
+                    ),
+                    Validator.isSDT(
+                        "#SDT",
+                        "Số điện thoại không hợp lệ"
+                    ),
+                ],
+                onXuLy: function () {
+                    console.log("Xử lý");
+                }
+            });
+        </script>
+    </body>
+</html>

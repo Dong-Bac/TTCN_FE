@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Form</title>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/login.css" />
+    </head>
+    <body>
+        <div id="header">
+            <nav class="container">
+                <a href="" id="logo">
+                    <img src="./assets/img/logo.png" alt="Lotte Hotel" />
+                </a>
+                <ul id="main-menu">
+                    <li><a href="#!">Trang chủ</a></li>
+                    <li><a href="#!">Giới thiệu</a></li>
+                    <li><a href="#!">Phòng</a></li>
+                    <li><a href="signup.html" class="dk">Đăng ký</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="form">
+            <div id="loginForm">
+                <h2>login</h2>
+                <form action="" method="post" class="form" id="form-login">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Username</label>
+                        <br />
+                        <input
+                            id="email"
+                            name="email"
+                            type="text"
+                            placeholder="Nhập email"
+                            class="form-control"
+                        />
+                        <span class="form-message"></span>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <br />
+                        <input
+                            id="password"
+                            name="password"
+                            type="password"
+                            placeholder="Nhập mật khẩu"
+                            class="form-control"
+                        />
+                        <span class="form-message"></span>
+                    </div>
+            
+                    <input class="btn-login" type="submit" value="Login" />
+                    <div class="link">
+                        <p>
+                            Not A Member ? <a href="./signup.html">Sign up</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <img class="footer_logo" src="./assets/img/logo.png" alt="Lotte" />
+            <div class="footer_contact">
+                <ul>
+                    <li>
+                        <address>
+                            <span>Địa chỉ: </span>54 P. Liễu Giai, Cống Vị, Ba
+                            Đình, Hà Nội 100000, Việt Nam
+                        </address>
+                    </li>
+                    <li>
+                        <span>Số điện thoại: </span
+                        ><a href="tel:0862269885">0862269885</a>
+                    </li>
+                    <li>
+                        <span>Email: </span
+                        ><a href="mailto:lotte.haui@gmail.com"
+                            >lotte.haui@gmail.com</a
+                        >
+                    </li>
+                </ul>
+                <div class="footer_mxh">
+                    <a href="!#">
+                        <img
+                            class="footer_icon"
+                            src="./assets/icon/facebook.svg"
+                            alt="facebook"
+                            width="28px"
+                            height="28px"
+                        />
+                    </a>
+                    <a href="!#">
+                        <img
+                            class="footer_icon"
+                            src="./assets/icon/instagram.svg"
+                            alt="instagram"
+                            width="28px"
+                            height="28px"
+                        />
+                    </a>
+                    <a href="!#">
+                        <img
+                            class="footer_icon"
+                            src="./assets/icon/tiktok.svg"
+                            alt="tiktok"
+                            width="28px"
+                            height="28px"
+                        />
+                    </a>
+                    <a href="!#">
+                        <img
+                            class="footer_icon"
+                            src="./assets/icon/twitter.svg"
+                            alt="twitter"
+                            width="28px"
+                            height="28px"
+                        />
+                    </a>
+                    <a href="!#">
+                        <img
+                            class="footer_icon"
+                            src="./assets/icon/youtube.svg"
+                            alt="youtube"
+                            width="28px"
+                            height="28px"
+                        />
+                    </a>
+                </div>form-1
+            </div>
+        </footer>
+        <script src="./assets/js/login copy.js"></script>
+        <script src="./assets/js/validateTT.js"></script>
+        <script>
+            Validator({
+                form: "#form-login",
+                formGroupSelector: ".form-group",
+                errorSelector: ".form-message",
+                rules: [
+                    Validator.isRequired(
+                        "#email",
+                        "Vui lòng nhập trường này"
+                    ),
+                    Validator.isRequired(
+                        "#password",
+                        "Vui lòng nhập trường này"
+                    ),
+                ],
+                onXuLy: function () {
+                    xuLy();
+                }
+            });
+        </script>
+    </body>
+</html>

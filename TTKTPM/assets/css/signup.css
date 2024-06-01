@@ -1,0 +1,211 @@
+html {
+    font-family: Arial;
+}
+
+body {
+    place-items: center;
+    background-image: url(../img/bg.jpg);
+    background-size: auto;
+    background-position: center;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+#header {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    padding: 10px 0px;
+}
+
+#logo img {
+    max-width: 60px;
+    height: auto;
+}
+
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 26px 30px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 3px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+a.dn{
+    background: #c94842;
+    color: #ffffff;
+    padding: 6px 8px;
+}
+
+.form {
+    position: relative;
+    display: block;
+    min-height: calc(100vh - 80px);
+}
+
+#signupForm {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 565px;
+    border: solid white 1.5px;
+    border-radius: 15px;
+    background: transparent;
+    backdrop-filter: blur(60px);
+    box-shadow: -13px -13px 20px -4px #9d9999;
+}
+
+h2 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 29px;
+    text-align: center;
+    margin: 20px;
+}
+
+.form-group {
+    width: 80%;
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 8px 0 8px 23px;
+    padding-left: 23px;
+    font-size: 16px;
+    border: solid white 1.5px;
+    border-radius: 15px;
+}
+
+.form-label {
+    display: inline-block;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.form-message {
+    display: inline-block;
+    padding: 6px 0;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.btn-signup {
+    display: block;
+    width: 80%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #c94842;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+.link {
+    margin-top: 16px;
+    text-align: center;
+    color: #9d9999;
+}
+
+.link a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover {
+    font-weight: bold;
+}
+
+footer {
+    position: relative;
+    background-color: #c94842;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer_logo {
+    height: 140px;
+    width: 140px;
+    margin-right: 100px;
+}
+
+.footer_contact li {
+    padding: 10px;
+}
+
+.footer_contact li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#ft {
+    list-style: none;
+}
+
+.footer_contact li span {
+    font-weight: 600;
+}
+
+.footer_mxh {
+    position: absolute;
+    right: 52px;
+    bottom: 20px;
+}
+
+.footer_mxh a {
+    text-decoration: none;
+}
+
+.footer_icon {
+    margin-right: 14px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(73deg) brightness(100%) contrast(103%);
+}

@@ -1,0 +1,123 @@
+html {
+    font-family: Arial;
+}
+
+.header {
+    padding: 0 52px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #d1d1e0;
+}
+
+.logo {
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.listNav {
+    margin-left: 123px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 33px;
+    padding: 8px 12px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.account {
+    position: relative;
+}
+
+.listSubNav {
+    display: none;
+}
+
+.listSubNav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.showMenuAccount {
+    display: flex;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #d1d1e0;
+}
+
+.subNav {
+    padding: 10px 20px;
+}
+
+.content {
+    min-height: calc(100vh - 140px);
+    max-width: 1340px;
+    margin: 30px auto;
+}
+
+footer {
+    position: relative;
+    background-color: #c94842;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer_logo {
+    height: 140px;
+    width: 140px;
+    margin-right: 100px;
+}
+
+.footer_contact li {
+    padding: 10px;
+}
+
+.footer_contact li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer_contact li span {
+    font-weight: 600;
+}
+
+.footer_mxh {
+    position: absolute;
+    right: 52px;
+    bottom: 20px;
+}
+
+.footer_mxh a {
+    text-decoration: none;
+}
+
+.footer_icon {
+    margin-right: 14px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(73deg) brightness(100%) contrast(103%);
+}

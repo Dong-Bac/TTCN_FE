@@ -1,0 +1,154 @@
+.header {
+    padding: 0 50px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #C94842;
+}
+
+.logo {
+    height: 55px;
+    width: 60px;
+    float: left;
+    margin-left: 36px;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+}
+
+.listNav {
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+.listNav a{
+    text-decoration: none;
+    color: black;
+}
+.listNav a:hover{
+    color: #C94842;
+}
+.nav{
+    padding: 0 40px 0 40px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.room {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 50px 80px;
+}
+
+.room-card {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 1000px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.room-card img {
+    width: 60%;
+    height: 100%;
+    padding-left: 2px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.room-info {
+    padding: 15px 50px;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.room-info p {
+    margin: 5px ;
+}
+
+.room-info .book-now {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+
+.room-info .book-now:hover {
+    background-color: #e63e00;
+}
+
+footer {
+    position: relative;
+    background-color: #c94842;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+}
+
+.footer_logo {
+    height: 140px;
+    width: 140px;
+    margin-right: 100px;
+}
+
+.footer_contact li {
+    padding: 10px;
+    list-style: none;
+
+}
+
+.footer_contact li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer_contact li span {
+    font-weight: 600;
+}
+
+.footer_mxh {
+    position: absolute;
+    right: 52px;
+    bottom: 20px;
+}
+
+.footer_mxh a {
+    text-decoration: none;
+}
+
+.footer_icon {
+    margin-right: 14px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(73deg) brightness(100%) contrast(103%);
+}
+

@@ -1,0 +1,144 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styleSample.css" />
+        <link rel="stylesheet" href="./assets/css/quanLyKhachHang.css" />
+    </head>
+<body>
+    <header class="header">
+        <figure>
+            <img class="logo" src="./assets/img/logo.png" alt="Lotte" />
+        </figure>
+        <ul class="listNav">
+            <li class="nav"><a href="Trangchu.html">Trang chủ</a></li>
+            <li class="nav"><a href="about.html">Giới thiệu</a></li>
+            <li class="nav"><a href="DanhSachPhong.html">Phòng</a></li>
+            <li class="nav">
+                <a href="QuanLyPhongDaDat.html">Quản lý</a>
+            </li>
+        </ul>
+        <div class="account">
+            <img class="avatar" src="./assets/img/logo.png" alt="Avatar" />
+            <ul class="listSubNav">
+                <li class="subNav">
+                    <a href="#!">Quản lý tài khoản</a>
+                </li>
+                <li class="subNav">
+                    <a class="logout" href="#!">Đăng xuất</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="customer-search">
+        <nav class="tk">
+            <input type="text" placeholder="Tìm kiếm khách hàng..." id="customer-search-input">
+            <button id="customer-search-btn">Tìm kiếm</button>
+        </nav>
+    </div>
+
+    <div id="content">
+        <h2>Quản lý khách hàng</h2>
+        <table id="customerTable">
+            <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Email</th>
+                <th>Số điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Tuổi</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Dữ liệu khách hàng sẽ được thêm vào đây bằng JavaScript -->
+            </tbody>
+        </table>
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p>Bạn có chắc chắn muốn xóa khách hàng này?</p>
+                <button id="confirm-delete-btn">Xác nhận</button>
+                <button id="cancel-delete-btn">Hủy</button>
+            </div>
+        </div>
+        <button id="back-btn" onclick="window.location.href = 'quanLyKhachHang.html'" style="display: none;">Quay lại</button>
+        <!-- <button onclick="login()">Đăng nhập</button> -->
+    </div>  
+
+    <footer>
+        <img class="footer_logo" src="./assets/img/logo.png" alt="Lotte" />
+        <div class="footer_contact">
+            <ul>
+                <li>
+                    <address>
+                        <span>Địa chỉ: </span>54 P. Liễu Giai, Cống Vị, Ba
+                        Đình, Hà Nội 100000, Việt Nam
+                    </address>
+                </li>
+                <li>
+                    <span>Số điện thoại: </span
+                    ><a href="tel:0862269885">0862269885</a>
+                </li>
+                <li>
+                    <span>Email: </span
+                    ><a href="mailto:lotte.haui@gmail.com"
+                        >lotte.haui@gmail.com</a
+                    >
+                </li>
+            </ul>
+            <div class="footer_mxh">
+                <a href="!#">
+                    <img
+                        class="footer_icon"
+                        src="./assets/icon/facebook.svg"
+                        alt="facebook"
+                        width="28px"
+                        height="28px"
+                    />
+                </a>
+                <a href="!#">
+                    <img
+                        class="footer_icon"
+                        src="./assets/icon/instagram.svg"
+                        alt="instagram"
+                        width="28px"
+                        height="28px"
+                    />
+                </a>
+                <a href="!#">
+                    <img
+                        class="footer_icon"
+                        src="./assets/icon/tiktok.svg"
+                        alt="tiktok"
+                        width="28px"
+                        height="28px"
+                    />
+                </a>
+                <a href="!#">
+                    <img
+                        class="footer_icon"
+                        src="./assets/icon/twitter.svg"
+                        alt="twitter"
+                        width="28px"
+                        height="28px"
+                    />
+                </a>
+                <a href="!#">
+                    <img
+                        class="footer_icon"
+                        src="./assets/icon/youtube.svg"
+                        alt="youtube"
+                        width="28px"
+                        height="28px"
+                    />
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/quanLyKhacHang.js"></script>
+</body>  
+</html>

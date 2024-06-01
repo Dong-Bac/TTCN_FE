@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ket Qua</title>
+    <link rel="stylesheet" href="ketqua.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <figure>
+                <img class="logo" src="image/logo.jpg" alt="Lotte Hotel" />
+                <h3 style="font-size: larger; color: #C94842; margin-bottom: 10px;">LOTTE HOTEL</h3>
+            </figure>
+            <ul class="listNav">
+                <li class="nav"><a href="Trangchu.html">Trang chủ</a></li>
+                <li class="nav"><a href="about.html">Giới thiệu</a></li>
+                <li class="nav"><a href="DanhSachPhong.html">Phòng</a></li>
+                <li class="nav">
+                    <a href="QuanLyPhongDaDat.html">Phòng đã đặt</a>
+                </li>
+            </ul>
+            <div class="account">
+                <img class="avatar" src="./image/logo.jpg" alt style="width: 40px;" />
+                <ul class="listSubNav">
+                    <li class="subNav">
+                        <a href="QuanLyTTCN.html">Quản lý tài khoản</a>
+                    </li>
+                    <li class="subNav">
+                        <a class="logout" href="#!">Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="search-results">
+            <h1>Kết Quả Tìm Kiếm</h1>
+            <form class="search-form" id="searchForm">
+                <div class="form-group">
+                    <label for="searchInput">Tìm kiếm phòng:</label>
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm" required>
+                </div>
+                <div class="form-group">
+                    <label for="roomType"></label>
+                    <select name="room-type" id="roomType">
+                        <option value="all">Tất cả các loại phòng</option>
+                        <option value="vip">Phòng VIP</option>
+                        <option value="standard">Phòng Standard</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="checkInDate">Ngày đặt phòng:</label>
+                    <input type="date" id="checkInDate" name="checkInDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOutDate">Ngày trả phòng:</label>
+                    <input type="date" id="checkOutDate" name="checkOutDate" required>
+                </div>
+                <button type="submit">Tìm Kiếm</button>
+            </form>
+            <div class="rooms">
+                <div class="room">
+                    <img src="image/menu.jpg" alt="Phòng Vip">
+                    <div class="room-info">
+                        <h2>Phòng Vip</h2>
+                        <p>Giá: 1,000,000 VND / đêm</p>
+                        <span class="status">Trống</span>
+                        <button class="book-room">Đặt Phòng</button>
+                    </div>
+                </div>
+                <div class="room">
+                    <img src="image/vip.jpg" alt="Phòng Vip">
+                    <div class="room-info">
+                        <h2>Phòng Vip</h2>
+                        <p>Giá: 2,000,000 VND / đêm</p>
+                        <span class="status">Đã được thuê</span>
+                        <button class="book-room">Đặt Phòng</button>
+                    </div>
+                </div>
+                <div class="room">
+                    <img src="image/room.jpg" alt="Phòng Standard">
+                    <div class="room-info">
+                        <h2>Phòng Standard</h2>
+                        <p>Giá: 800,000 VND / đêm</p>
+                        <span class="status">Trống</span>
+                        <button class="book-room">Đặt Phòng</button>
+                    </div>
+                </div>
+                <div class="room">
+                    <img src="image/room1.jpg" alt="Phòng Standard">
+                    <div class="room-info">
+                        <h2>Phòng Standard</h2>
+                        <p>Giá: 750,000 VND / đêm</p>
+                        <span class="status">Trống</span>
+                        <button class="book-room">Đặt Phòng</button>
+                    </div>
+                </div>
+                <div class="room">
+                    <img src="image/room2.jpg" alt style="width: 300px;">
+                    <div class="room-info">
+                        <h2>Phòng Standard</h2>
+                        <p>Giá: 600,000 VND / đêm</p>
+                        <span class="status">Đã được thuê</span>
+                        <button class="book-room">Đặt Phòng</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>    
+    <footer>
+        <img class="footer_logo" src="image/logo.jpg" alt="Lotte" />
+        <div class="footer_contact">
+            <ul>
+                <li>
+                    <address>
+                        <span>Địa chỉ: </span>54 P. Liễu Giai, Cống Vị, Ba
+                        Đình, Hà Nội 100000, Việt Nam
+                    </address>
+                </li>
+                <li>
+                    <span>Số điện thoại: </span
+                    ><a href="tel:0862269885">0862269885</a>
+                </li>
+                <li>
+                    <span>Email: </span
+                    ><a href="mailto:lotte.haui@gmail.com"
+                        >lotte.haui@gmail.com</a
+                    >
+                </li>
+            </ul>
+            <div class="footer_mxh">
+                <a href="!#">
+                    <img
+                        class="footer_icon"
+                        src="image/face.png"
+                        alt="facebook"
+                        width="28px"
+                        height="28px"
+                    />
+                </a>
+                <a href="!#">
+                    <img
+                        class="footer_icon"
+                        src="image/insta.webp"
+                        alt="instagram"
+                        width="28px"
+                        height="28px"
+                    />
+                </a>
+                <a href="!#">
+                    <img
+                        class="footer_icon"
+                        src="image/tiktok.png"
+                        alt="tiktok"
+                        width="28px"
+                        height="28px"
+                    />
+                </a>
+                <a href="!#">
+                    <img
+                        class="footer_icon"
+                        src="image/tw.png"
+                        alt="twitter"
+                        width="28px"
+                        height="28px"
+                    />
+                </a>
+                <a href="!#">
+                    <img
+                        class="footer_icon"
+                        src="image/youtube.jpg"
+                        alt="youtube"
+                        width="28px"
+                        height="28px"
+                    />
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/header.js"></script>
+    <script src="ketqua.js"></script>
+</body>
+</html>

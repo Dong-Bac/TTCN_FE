@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Dien Tim Kiem</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/homeuser.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+    </header>
+    <section class="hero">
+        <h1>Đặt phòng</h1>
+        <form class="search-form" id="searchForm">
+            <div class="form-group">
+                <label for="checkRoom">Tên Phòng:</label>
+                <input type="text" id="checkRoom" name="checkRoom" required disabled>
+            </div>
+            <div class="form-group">
+                <label for="roomTypeIP">Loại phòng</label>
+                <input type="text" id="roomTypeIP" name="roomTypeIP" required disabled>
+            </div>
+            <div class="form-group">
+                <label for="checkEmail">Email:</label>
+                <input type="text" id="checkEmail" name="checkEmail" required disabled>
+            </div>
+            <div class="form-group">
+                <label for="checkMoney">Số tiền:</label>
+                <input type="text" id="checkMoney" name="checkMoney" required disabled>
+            </div>
+            <div class="form-group">
+                <label for="checkInDateIP">Ngày đặt phòng:</label>
+                <input type="date" id="checkInDateIP" name="checkInDateIP" required>
+            </div>
+            <div class="form-group">
+                <label for="checkOutDateIP">Ngày trả phòng:</label>
+                <input type="date" id="checkOutDateIP" name="checkOutDateIP" required>
+            </div>
+
+            <button class="btn_timKiem" type="button" onclick="editRoom()">Cập nhật</button>
+            <button class="btn_timKiem" type="button" onclick="window.location.href = 'DanhSachPhong.html'">Quay lại</button>
+        </form>
+    </section>
+    <footer>
+        <img class="footer_logo" src="./assets/img/logo.png" alt="Lotte" />
+        <div class="footer_contact">
+            <ul>
+                <li>
+                    <address>
+                        <span>Địa chỉ: </span>54 P. Liễu Giai, Cống Vị, Ba Đình, Hà Nội 100000, Việt Nam
+                    </address>
+                </li>
+                <li>
+                    <span>Số điện thoại: </span><a href="tel:0862269885">0862269885</a>
+                </li>
+                <li>
+                    <span>Email: </span><a href="mailto:lotte.haui@gmail.com">lotte.haui@gmail.com</a>
+                </li>
+            </ul>
+            <div class="footer_mxh">
+                <a href="!#">
+                    <img class="footer_icon" src="./assets/icon/facebook.svg" alt="facebook" width="28px" height="28px" />
+                </a>
+                <a href="!#">
+                    <img class="footer_icon" src="./assets/icon/instagram.svg" alt="instagram" width="28px" height="28px" />
+                </a>
+                <a href="!#">
+                    <img class="footer_icon" src="./assets/icon/tiktok.svg" alt="tiktok" width="28px" height="28px" />
+                </a>
+                <a href="!#">
+                    <img class="footer_icon" src="./assets/icon/twitter.svg" alt="twitter" width="28px" height="28px" />
+                </a>
+                <a href="!#">
+                    <img class="footer_icon" src="./assets/icon/youtube.svg" alt="youtube" width="28px" height="28px" />
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/render.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/datphong.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    /* color: white; */
+}   
+
+body {
+    place-items: center;
+    /* background-image: url(bg.jpg);
+    background-size:auto;
+    background-position:center; */
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+#header {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    padding: 10px 0px;
+}
+
+#logo img{
+    max-width: 60px;
+    height: auto;
+}
+
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    padding:26px 30px;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 3px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+nav > ul a:hover{
+    background: #c94842;
+    color: #ffffff;
+}
+
+#avt{
+    height: 20px;
+    width: 20px;
+    background-color: #f2f2f2;
+    border:grey;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#avt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.tk{
+    max-width: 1400px;
+    margin: 0px auto;
+    justify-content:center;
+}
+
+.customer-search{
+    background-color: #c94842;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+}
+
+.tk input{
+    height: 30px;
+    width: 500px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.tk button{
+    height: 30px;
+    width: 90px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+#content{
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 353px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    width: 280px;
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  button {
+    background-color: #c94842;
+    color: white;
+    padding: 8px 16px;
+    margin: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    position: relative;
+    background-color: #c94842;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer_logo {
+    height: 140px;
+    width: 140px;
+    margin-right: 100px;
+}
+
+.footer_contact li {
+    padding: 10px;
+}
+
+.footer_contact li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#ft{
+    list-style: none;
+}
+
+.footer_contact li span {
+    font-weight: 600;
+}
+
+.footer_mxh {
+    position: absolute;
+    right: 52px;
+    bottom: 20px;
+}
+
+.footer_mxh a {
+    text-decoration: none;
+}
+
+.footer_icon {
+    margin-right: 14px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(73deg) brightness(100%) contrast(103%);
+}
+
+
+/* CSS for the modal */
+.modal {
+    display: none; /* Ẩn modal ban đầu */
+    position: fixed; /* Vị trí cố định */
+    z-index: 1; /* Hiển thị modal trên các phần khác của trang */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full chiều rộng */
+    height: 100%; /* Full chiều cao */
+    overflow: auto; /* Tạo thanh cuộn nếu nội dung quá dài */
+    background-color: rgba(0, 0, 0, 0.5); /* Tạo một lớp phủ */
+}
+
+/* Nội dung của modal */
+.modal-content {
+    margin:auto;
+    background-color: #fefefe;
+    margin: 15% auto; /* Cách lề trên và dưới 15% chiều cao của cửa sổ trình duyệt */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Chiều rộng của nội dung modal */
+    text-align: center;
+}
+
+/* Nút đóng */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

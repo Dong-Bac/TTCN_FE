@@ -1,0 +1,268 @@
+html {
+    font-family: Arial;
+}
+
+.header {
+    padding: 0 52px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #d1d1e0;
+}
+
+.logo {
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.listNav {
+    margin-left: 123px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 33px;
+    padding: 8px 12px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.account {
+    position: relative;
+}
+
+.quanLy {
+    position: relative;
+}
+
+.listMenuAcc {
+    display: none;
+}
+
+.listSubNav {
+    display: none;
+}
+
+.listMenuAcc a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.listSubNav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.showMenuAccount {
+    display: flex;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #d1d1e0;
+}
+
+.showMenuQuanLy {
+    display: flex;
+    width: 290px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #d1d1e0;
+}
+
+.subNav {
+    padding: 10px 20px;
+}
+
+.content {
+    min-height: calc(100vh - 140px);
+    max-width: 1340px;
+    margin: 30px auto;
+}
+
+.aboutLotte {
+    text-align: center;
+}
+
+.subAbout {
+    line-height: 1.4;
+
+    font-size: 16px;
+    padding: 6px;
+}
+
+.mucTieu_tamNhin {
+    padding-top: 59px;
+    display: flex;
+    gap: 10px;
+}
+
+.mucTieu,
+.tamNhin {
+    flex: 1;
+    border: #d1d1e0 1px solid;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.mucTieu,
+.tamNhin p {
+    padding-bottom: 12px;
+}
+
+h1 {
+    position: relative;
+    padding: 60px 0 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 140px;
+    background-color: #c94842;
+    height: 3px;
+    border-radius: 6px;
+}
+
+.nguyenTac,
+.giaTri {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titleMucTieu,
+.titleTamNhin {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+hr {
+    margin: 49px 0;
+}
+
+.titleNguyenTac,
+.titleGiaTri {
+    position: relative;
+    margin: 30px 0 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.titleNguyenTac::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 170px;
+    background-color: #c94842;
+    height: 3px;
+    border-radius: 6px;
+}
+
+.titleGiaTri::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 120px;
+    background-color: #c94842;
+    height: 3px;
+    border-radius: 6px;
+}
+
+.subNguyenTac,
+.subGiaTri {
+    text-align: center;
+    line-height: 60px;
+    align-self: center;
+    background-color: #c94842;
+    height: 60px;
+    width: 230px;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.map {
+    margin-top: 10px;
+}
+
+footer {
+    position: relative;
+    background-color: #c94842;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer_logo {
+    height: 140px;
+    width: 140px;
+    margin-right: 100px;
+}
+
+.footer_contact li {
+    padding: 10px;
+}
+
+.footer_contact li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer_contact li span {
+    font-weight: 600;
+}
+
+.footer_mxh {
+    position: absolute;
+    right: 52px;
+    bottom: 20px;
+}
+
+.footer_mxh a {
+    text-decoration: none;
+}
+
+.footer_icon {
+    margin-right: 14px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(73deg) brightness(100%) contrast(103%);
+}
